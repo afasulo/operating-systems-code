@@ -1,8 +1,15 @@
 # Operating Systems Code
 
-This repository contains implementations of fundamental operating systems concepts, organized into four main areas.
+This repository contains implementations of fundamental operating systems concepts, organized into five main areas.
 
 ## Directory Structure
+
+### kernel-security/
+**Linux kernel modules for security monitoring.** Includes:
+- `process_monitor.c` — Kprobe-based process creation monitor (fork/execve hooking)
+- `syscall_integrity.c` — Syscall table integrity checker for rootkit detection
+
+Demonstrates kernel-level introspection, the foundation for VMI (Virtual Machine Introspection) and host-based intrusion detection.
 
 ### processes and scheduling/
 Process management and CPU scheduling algorithms. Covers process creation with `fork()`, process hierarchies, and various scheduling strategies including priority scheduling, FCFS, SJF, and Round Robin.
@@ -28,6 +35,8 @@ Alternatively, use CMake in any directory.
 
 ## Topics Covered
 
+- **Kernel Development**: Loadable kernel modules, kprobes, syscall hooking
+- **Security Monitoring**: Process auditing, rootkit detection, integrity checking
 - **Process Management**: fork, waitpid, process hierarchies
 - **CPU Scheduling**: Priority, FCFS, SJF, Round Robin
 - **Synchronization**: Locks, semaphores, condition variables
