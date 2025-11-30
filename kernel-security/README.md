@@ -53,10 +53,10 @@ Understanding how these work also reveals **offensive** techniques:
 
 This dual understanding is essential for security research and threat analysis.
 
-## ⚠️ Warning
+## Warning
 
-Kernel modules run with full system privileges. Bugs can crash your system. **I have a way to collect kernal panic crash data** If interested, contact me.
-**Always test in a VM first.**
+Kernel modules run with full system privileges. Bugs can crash your system. **I have an idea/proof of concept to collect kernal panic crash data anonymously** Nothing goes through the network stack. If interested, contact me.
+**Always test in a VM first FYI.**
 
 ## References
 
